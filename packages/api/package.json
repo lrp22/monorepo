@@ -1,0 +1,21 @@
+{
+  "name": "@app/api",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./routers": "./src/routers/index.ts",
+    "./context": "./src/context.ts"
+  },
+  "dependencies": {
+    "@app/auth": "workspace:*",
+    "@app/db": "workspace:*",
+    "@orpc/server": "^1.12.2",
+    "@orpc/zod": "^1.12.2",
+    "better-auth": "^1.4.5",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
