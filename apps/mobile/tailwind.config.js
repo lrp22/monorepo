@@ -1,7 +1,6 @@
 const { hairlineWidth } = require("nativewind/theme");
-const { sharedConfig } = require("../../packages/ui/src/tailwind.config");
+const { sharedConfig } = require("../../packages/ui/tailwind.config");
 
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   presets: [require("nativewind/preset"), sharedConfig],
   content: [
